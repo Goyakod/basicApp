@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ZXLog_Goyakod(@"我是一条打印信息");
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
