@@ -15,6 +15,8 @@
 		C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0931D642AEE00B89FBC /* ZXTextField.m */; };
 		C86DB0A51D64423800B89FBC /* ZXDateStringTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0981D64423800B89FBC /* ZXDateStringTransfer.m */; };
 		C86DB0A61D64423800B89FBC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0A41D64423800B89FBC /* UIView+Frame.m */; };
+		C86DB0A91D64454300B89FBC /* UIColor+ZXApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0A81D64454300B89FBC /* UIColor+ZXApp.m */; };
+		C86DB0AC1D64455700B89FBC /* UIFont+ZXApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0AB1D64455700B89FBC /* UIFont+ZXApp.m */; };
 		C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C887AEA71D61C76A00D00C48 /* ViewController.m */; };
 		C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89764251D62B1E900DCFCEE /* ZXTextView.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,10 @@
 		C86DB09E1D64423800B89FBC /* ViewControllerCallBackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCallBackDelegate.h; sourceTree = "<group>"; };
 		C86DB0A31D64423800B89FBC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		C86DB0A41D64423800B89FBC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		C86DB0A71D64454300B89FBC /* UIColor+ZXApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZXApp.h"; sourceTree = "<group>"; };
+		C86DB0A81D64454300B89FBC /* UIColor+ZXApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZXApp.m"; sourceTree = "<group>"; };
+		C86DB0AA1D64455700B89FBC /* UIFont+ZXApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ZXApp.h"; sourceTree = "<group>"; };
+		C86DB0AB1D64455700B89FBC /* UIFont+ZXApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ZXApp.m"; sourceTree = "<group>"; };
 		C887AEA61D61C76A00D00C48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C887AEA71D61C76A00D00C48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C89764241D62B1E900DCFCEE /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
@@ -195,6 +201,10 @@
 		C86DB09F1D64423800B89FBC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C86DB0A71D64454300B89FBC /* UIColor+ZXApp.h */,
+				C86DB0A81D64454300B89FBC /* UIColor+ZXApp.m */,
+				C86DB0AA1D64455700B89FBC /* UIFont+ZXApp.h */,
+				C86DB0AB1D64455700B89FBC /* UIFont+ZXApp.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -303,9 +313,11 @@
 			files = (
 				C86DB0A51D64423800B89FBC /* ZXDateStringTransfer.m in Sources */,
 				C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */,
+				C86DB0AC1D64455700B89FBC /* UIFont+ZXApp.m in Sources */,
 				C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */,
 				C86DB0A61D64423800B89FBC /* UIView+Frame.m in Sources */,
 				C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */,
+				C86DB0A91D64454300B89FBC /* UIColor+ZXApp.m in Sources */,
 				C86431CF1D61BF0D00734863 /* AppDelegate.m in Sources */,
 				C86431CC1D61BF0D00734863 /* main.m in Sources */,
 			);
