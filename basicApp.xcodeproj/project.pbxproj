@@ -12,7 +12,9 @@
 		C86431D51D61BF0D00734863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86431D31D61BF0D00734863 /* Main.storyboard */; };
 		C86431D71D61BF0D00734863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86431D61D61BF0D00734863 /* Assets.xcassets */; };
 		C86431DA1D61BF0D00734863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86431D81D61BF0D00734863 /* LaunchScreen.storyboard */; };
+		C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0931D642AEE00B89FBC /* ZXTextField.m */; };
 		C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C887AEA71D61C76A00D00C48 /* ViewController.m */; };
+		C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89764251D62B1E900DCFCEE /* ZXTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +27,12 @@
 		C86431D91D61BF0D00734863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86431DB1D61BF0D00734863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C86431E11D61C09F00734863 /* ZXPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXPrefixHeader.pch; sourceTree = "<group>"; };
+		C86DB0921D642AEE00B89FBC /* ZXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextField.h; sourceTree = "<group>"; };
+		C86DB0931D642AEE00B89FBC /* ZXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTextField.m; sourceTree = "<group>"; };
 		C887AEA61D61C76A00D00C48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C887AEA71D61C76A00D00C48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C89764241D62B1E900DCFCEE /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
+		C89764251D62B1E900DCFCEE /* ZXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,28 @@
 		C86431E41D61C26400734863 /* PublicViews */ = {
 			isa = PBXGroup;
 			children = (
+				C86DB0911D642AEE00B89FBC /* ZXTextField */,
+				C89764231D62B1D200DCFCEE /* ZXTextView */,
 			);
 			path = PublicViews;
+			sourceTree = "<group>";
+		};
+		C86DB0911D642AEE00B89FBC /* ZXTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C86DB0921D642AEE00B89FBC /* ZXTextField.h */,
+				C86DB0931D642AEE00B89FBC /* ZXTextField.m */,
+			);
+			path = ZXTextField;
+			sourceTree = "<group>";
+		};
+		C89764231D62B1D200DCFCEE /* ZXTextView */ = {
+			isa = PBXGroup;
+			children = (
+				C89764241D62B1E900DCFCEE /* ZXTextView.h */,
+				C89764251D62B1E900DCFCEE /* ZXTextView.m */,
+			);
+			path = ZXTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */,
 				C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */,
+				C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */,
 				C86431CF1D61BF0D00734863 /* AppDelegate.m in Sources */,
 				C86431CC1D61BF0D00734863 /* main.m in Sources */,
 			);

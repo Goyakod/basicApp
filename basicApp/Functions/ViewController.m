@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ZXTextView.h"
+#import "ZXTextField.h"
 
 @interface ViewController ()
 
@@ -17,9 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ZXLog_Goyakod(@"我是一条打印信息");
+    ZXTextView *textView = [[ZXTextView alloc] initWithFrame:CGRectMake(10, 20, 300, 100)];
+    textView.placeholder = @"我是红色的占位文字";
+    textView.placeholderColor = [UIColor lightGrayColor];
+    textView.contentColor = [UIColor greenColor];
+    [self.view addSubview:textView];
+
     
-    // Do any additional setup after loading the view, typically from a nib.
+    ZXTextField *textField = [[ZXTextField alloc] initWithFrame:CGRectMake(20, 150, 300, 50)];
+    [self.view addSubview:textField];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
