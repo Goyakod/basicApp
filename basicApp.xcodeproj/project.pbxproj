@@ -13,6 +13,8 @@
 		C86431D71D61BF0D00734863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86431D61D61BF0D00734863 /* Assets.xcassets */; };
 		C86431DA1D61BF0D00734863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86431D81D61BF0D00734863 /* LaunchScreen.storyboard */; };
 		C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0931D642AEE00B89FBC /* ZXTextField.m */; };
+		C86DB0A51D64423800B89FBC /* ZXDateStringTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0981D64423800B89FBC /* ZXDateStringTransfer.m */; };
+		C86DB0A61D64423800B89FBC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C86DB0A41D64423800B89FBC /* UIView+Frame.m */; };
 		C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C887AEA71D61C76A00D00C48 /* ViewController.m */; };
 		C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89764251D62B1E900DCFCEE /* ZXTextView.m */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,11 @@
 		C86431E11D61C09F00734863 /* ZXPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXPrefixHeader.pch; sourceTree = "<group>"; };
 		C86DB0921D642AEE00B89FBC /* ZXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextField.h; sourceTree = "<group>"; };
 		C86DB0931D642AEE00B89FBC /* ZXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTextField.m; sourceTree = "<group>"; };
+		C86DB0971D64423800B89FBC /* ZXDateStringTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDateStringTransfer.h; sourceTree = "<group>"; };
+		C86DB0981D64423800B89FBC /* ZXDateStringTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDateStringTransfer.m; sourceTree = "<group>"; };
+		C86DB09E1D64423800B89FBC /* ViewControllerCallBackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCallBackDelegate.h; sourceTree = "<group>"; };
+		C86DB0A31D64423800B89FBC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		C86DB0A41D64423800B89FBC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		C887AEA61D61C76A00D00C48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C887AEA71D61C76A00D00C48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C89764241D62B1E900DCFCEE /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 		C86431C91D61BF0C00734863 /* basicApp */ = {
 			isa = PBXGroup;
 			children = (
+				C86DB0951D64369900B89FBC /* BaseClasses */,
 				C86431E21D61C26400734863 /* CommonTools */,
 				C86431E31D61C26400734863 /* Functions */,
 				C86431E41D61C26400734863 /* PublicViews */,
@@ -91,6 +99,16 @@
 		C86431E21D61C26400734863 /* CommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				C86DB0961D64423800B89FBC /* DateStringTransfer */,
+				C86DB0991D64423800B89FBC /* DeviceType */,
+				C86DB09A1D64423800B89FBC /* MD5 */,
+				C86DB09B1D64423800B89FBC /* Network */,
+				C86DB09C1D64423800B89FBC /* PinyinHelper */,
+				C86DB09D1D64423800B89FBC /* Protocols */,
+				C86DB09F1D64423800B89FBC /* Sources */,
+				C86DB0A01D64423800B89FBC /* SystemVersion */,
+				C86DB0A11D64423800B89FBC /* UIImage+ */,
+				C86DB0A21D64423800B89FBC /* UIView+ */,
 			);
 			path = CommonTools;
 			sourceTree = "<group>";
@@ -120,6 +138,88 @@
 				C86DB0931D642AEE00B89FBC /* ZXTextField.m */,
 			);
 			path = ZXTextField;
+			sourceTree = "<group>";
+		};
+		C86DB0951D64369900B89FBC /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		C86DB0961D64423800B89FBC /* DateStringTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C86DB0971D64423800B89FBC /* ZXDateStringTransfer.h */,
+				C86DB0981D64423800B89FBC /* ZXDateStringTransfer.m */,
+			);
+			path = DateStringTransfer;
+			sourceTree = "<group>";
+		};
+		C86DB0991D64423800B89FBC /* DeviceType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeviceType;
+			sourceTree = "<group>";
+		};
+		C86DB09A1D64423800B89FBC /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		C86DB09B1D64423800B89FBC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C86DB09C1D64423800B89FBC /* PinyinHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PinyinHelper;
+			sourceTree = "<group>";
+		};
+		C86DB09D1D64423800B89FBC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C86DB09E1D64423800B89FBC /* ViewControllerCallBackDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C86DB09F1D64423800B89FBC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C86DB0A01D64423800B89FBC /* SystemVersion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SystemVersion;
+			sourceTree = "<group>";
+		};
+		C86DB0A11D64423800B89FBC /* UIImage+ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIImage+";
+			sourceTree = "<group>";
+		};
+		C86DB0A21D64423800B89FBC /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				C86DB0A31D64423800B89FBC /* UIView+Frame.h */,
+				C86DB0A41D64423800B89FBC /* UIView+Frame.m */,
+			);
+			path = "UIView+";
 			sourceTree = "<group>";
 		};
 		C89764231D62B1D200DCFCEE /* ZXTextView */ = {
@@ -201,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86DB0A51D64423800B89FBC /* ZXDateStringTransfer.m in Sources */,
 				C86DB0941D642AEE00B89FBC /* ZXTextField.m in Sources */,
 				C887AEA81D61C76A00D00C48 /* ViewController.m in Sources */,
+				C86DB0A61D64423800B89FBC /* UIView+Frame.m in Sources */,
 				C89764261D62B1E900DCFCEE /* ZXTextView.m in Sources */,
 				C86431CF1D61BF0D00734863 /* AppDelegate.m in Sources */,
 				C86431CC1D61BF0D00734863 /* main.m in Sources */,

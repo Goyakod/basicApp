@@ -14,21 +14,21 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     ZXTextView *textView = [[ZXTextView alloc] initWithFrame:CGRectMake(10, 20, 300, 100)];
-    textView.placeholder = @"我是红色的占位文字";
+    textView.placeholder = @"我是占位文字";
     textView.placeholderColor = [UIColor lightGrayColor];
     textView.contentColor = [UIColor greenColor];
     [self.view addSubview:textView];
-
+    
     
     ZXTextField *textField = [[ZXTextField alloc] initWithFrame:CGRectMake(20, 150, 300, 50)];
     [self.view addSubview:textField];
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
