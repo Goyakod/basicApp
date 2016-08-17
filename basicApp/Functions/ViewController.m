@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ZXTextView.h"
 #import "ZXTextField.h"
+#import "NSString+MD5.h"
 
 @interface ViewController ()
 
@@ -20,15 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ZXTextView *textView = [[ZXTextView alloc] initWithFrame:CGRectMake(10, 20, 300, 100)];
-    textView.placeholder = @"我是占位文字";
-    textView.placeholderColor = [UIColor lightGrayColor];
-    textView.contentColor = [UIColor greenColor];
-    [self.view addSubview:textView];
+    NSString *string = @"zhangxue1343457dsafoger2oit45h25g3";
     
+    ZXLog_Goyakod(@"16:%@",[NSString MD5Bit16:string]);
     
-    ZXTextField *textField = [[ZXTextField alloc] initWithFrame:CGRectMake(20, 150, 300, 50)];
-    [self.view addSubview:textField];
+    ZXLog_Goyakod(@"32:%@",[NSString MD5Bit32:string]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
