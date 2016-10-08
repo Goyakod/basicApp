@@ -19,13 +19,14 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     NSString *string = @"zhangxue1343457dsafoger2oit45h25g3";
     
-    ZXLog_Goyakod(@"16:%@",[NSString MD5Bit16:string]);
+    ZXLog_Goyakod(@"16:%@",[NSString MD5:string]);
     
-    ZXLog_Goyakod(@"32:%@",[NSString MD5Bit32:string]);
+    ZXLog_Goyakod(@"32:%@",[NSString MD5:string]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
